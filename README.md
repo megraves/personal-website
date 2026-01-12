@@ -7,7 +7,7 @@
 - 2025 National Robotics Week website (check it out [here](https://www.nationalroboticsweek.org/))
 - my personal website (much more fun than a resume!)
 
-🌱 I’m currently studying for by BS in CS at UMass Amherst taking the following courses:
+🌱 I have my BS in CS at UMass Amherst am currently pursuing my Masters in CS:
 - Scalable Websystems
 - Information Systems
 - Computer Architecture
