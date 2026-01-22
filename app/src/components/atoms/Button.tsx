@@ -2,8 +2,7 @@
 // When clicked, the button navigates to a route or opens a link in a new tab
 
 type Props = {
-    content: string,
-    isIcon: boolean,
+    content: string | React.ReactNode,
     isLink: boolean,
     route: string
     className?: string,
@@ -17,10 +16,10 @@ function nav(isLink: boolean, route: string) {
     }
 }
 
-export default function Button({content, isIcon, isLink, route, className}: Props) {
+export default function Button({content, isLink, route, className}: Props) {
     return(
         <button className={`p-1 ${className}`} onClick={() => nav(isLink, route)}>
-            {isIcon ? (<i className={`${content}`}></i>) : (content)}
+            {content}
         </button>
     );
 }
