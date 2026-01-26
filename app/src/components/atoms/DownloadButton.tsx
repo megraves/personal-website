@@ -1,19 +1,19 @@
 // A button to download my resume
 import { BsDownload } from "react-icons/bs";
 
-export default function DownloadButton() {
+type Props = {
+    fileName: string
+}
 
-    const handleDownload = () => {
-        //TODO
-    }
+export default function DownloadButton({fileName}: Props) {
 
     return (
         <div className="w-fit h-fit rounded-xl relative p-px bg-gradient-to-r from-orange-600 to-pink-600">
             <div className="w-fit p-2 rounded-xl justify-center bg-white">
-                <button className="flex flex-row gap-3 items-center" value="download" onClick={() => handleDownload()}>
+                <a href={fileName} download="MacyGravesResume.pdf" target="_blank" rel="noopener noreferrer" className="flex flex-row gap-3 items-center">
                     <span className="text-lg text-gray-600 font-semibold">Download Resume</span>
                     <BsDownload className=""></BsDownload>
-                </button>
+                </a>
             </div>
         </div>
     );
