@@ -41,7 +41,11 @@ export default function WorkTimeline() {
             location: "Boston, MA",
             when: "January 2025 - Present",
             image: "src/assets/NRWlogo.png",
-            bullets: []
+            bullets: [
+                "Overhauled and created content for the National Robotics Week 2025 and 2026 website.",
+                "Debugged search filters and component cards in PHP and Twig to accurately show new content.",
+                "Deployed changes using Craft CMS, SFTP and SSH."
+            ]
 
         }
     ];
