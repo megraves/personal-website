@@ -2,19 +2,10 @@ import Button from "./Button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
-// import { useState } from "react";
 
 export default function Profile() {
 
-    // const [mousePos, setMousePos] = useState({x: 0, y: 0});
-    
-    // const handleMouse = (event: React.MouseEvent<HTMLDivElement>) => {
-    //     const background = event.currentTarget;
-    //     const {left, top, width, height} = background.getBoundingClientRect();
-    //     const {clientX, clientY} = event;
-
-    //     setMousePos({x: ((clientX - left) / width) * 50, y: ((clientY - top) / height) * 50});
-    // };
+    //TODO: check out react bits for animated gradient background
 
     return (
         <div className={`w-full h-150 flex items-center lg:p-50 text-white bg-gradient-to-r from-orange-600 to-pink-600`}>
@@ -27,7 +18,7 @@ export default function Profile() {
                         <h1 className="text-lg lg:text-2xl font-light">LET'S CONNECT</h1>
                         <IoIosArrowForward className="text-xl lg:text-2xl"/>
                         <Button content={<FaLinkedin className="text-3xl lg:text-4xl"/>} isLink={true} route="https://www.linkedin.com/in/macy-graves" />
-                        <Button content={<MdEmail className="text-3xl lg:text-4xl"/>} isLink={false} route="" />
+                        <Button content={<MdEmail className="text-3xl lg:text-4xl"/>} isLink={true} route="mailto:macyygraves@gmail.com" />
                         <Button content={<FaGithub className="text-3xl lg:text-4xl"/>} isLink={true} route="https://github.com/megraves" />
                     </div>
                 </div>

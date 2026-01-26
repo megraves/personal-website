@@ -55,7 +55,7 @@ export default function WorkTimeline() {
             <div className="text-gray-500 flex flex-col gap-5 p-2">
                 {experiences.map((item) => (
                     <Timeline>
-                        <TimelineItem >
+                        <TimelineItem>
                             <TimelineOppositeContent>
                                 <div className="flex flex-row justify-end pr-5">
                                     { item.image ? <img src={item.image} alt="Company Logo" className="w-2/3 object-scale-down" /> : <></>}
@@ -65,7 +65,7 @@ export default function WorkTimeline() {
                             <TimelineDot />
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent >
+                            <TimelineContent key={item.key}>
                                 <div className="flex flex-col gap-2">
                                     <div>
                                         <h1 className="text-gray-600 text-xl">{item.title}</h1>
