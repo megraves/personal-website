@@ -19,16 +19,27 @@ export default function WorkTimeline() {
             when: "May 2024 - July 2024",
             image: "src/assets/MRlogo.jpg", //TODO: add image of me presenting to students
             bullets: [
-                "Hosted educational sessions introducing high school and middle school students to robotics, electronics, programming, and soldering ",
+                "Hosted educational sessions introducing high school and middle school students to robotics, electronics, programming, and soldering.",
                 "Assisted students in weeklong workshop academies as they build their own drones, underwater rovers, and silicon jellyfish robots."
             ]
+        },
+        {
+            key: 3,
+            company: "MassRobotics",
+            title: "Software Development Intern",
+            location: "Boston, MA",
+            when: "January 2025 - April 2025",
+            bullets: [
+                "Built a Python script to filter and present robot company locations on the MassRobotics Ecosystem Map."
+            ]
+            
         },
         {
             key: 2,
             company: "National Robotics Week",
             title: "Software Developer",
             location: "Boston, MA",
-            when: "SOMETIME",
+            when: "January 2025 - Present",
             image: "src/assets/NRWlogo.png",
             bullets: []
 
@@ -43,7 +54,7 @@ export default function WorkTimeline() {
                         <TimelineItem >
                             <TimelineOppositeContent>
                                 <div className="flex flex-row justify-end pr-5">
-                                    <img src={item.image} alt="Company Logo" className="w-2/3 object-scale-down" />
+                                    { item.image ? <img src={item.image} alt="Company Logo" className="w-2/3 object-scale-down" /> : <></>}
                                 </div>
                             </TimelineOppositeContent>
                             <TimelineSeparator >
