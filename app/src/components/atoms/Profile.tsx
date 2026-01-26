@@ -8,6 +8,7 @@ export default function Profile() {
     //TODO: check out react bits for animated gradient background
 
     return (
+        <section id="PROFILE">
         <div className={`w-full h-150 flex items-center lg:p-50 text-white bg-gradient-to-r from-orange-600 to-pink-600`}>
             <div className="flex flex-row items-center gap-5 p-5">
                 <img src="src/assets/grad_headshot.jpg" className="w-2/5 aspect-square rounded-full object-cover" alt="Profile Photo" />
@@ -24,5 +25,6 @@ export default function Profile() {
                 </div>
             </div>
         </div>
+        </section>
     );
 }
