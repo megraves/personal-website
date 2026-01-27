@@ -4,6 +4,8 @@ import SectionCard from "./components/atoms/SectionCard";
 import DownloadButton from "./components/atoms/DownloadButton";
 import PortfolioSlider from "./components/atoms/PortfolioSlider";
 import WorkTimeline from "./components/atoms/WorkTimeline";
+import PhotoGallery from "./components/atoms/PhotoGallery";
+import SkillsSpotlight from "./components/atoms/SkillsSpotlight";
 
 function App() {
 
@@ -12,22 +14,23 @@ function App() {
       <NavBar></NavBar>
       <Profile></Profile>
       <SectionCard title="ABOUT">
-        <div className="flex flex-row">
+        <div className="w-full flex flex-row justify-between flex-wrap pr-30">
           <div className="flex flex-col w-1/2 gap-5">
             <span className="text-2xl text-gray-600">My name is Macy Graves</span>
-            <span className="text-gray-500"> I am a graduate student with experience in building React web apps, database and system architecture, and agile software engineering techniques. I have some experience with low-level programming with Golang, C/C++, and Assembly through project-based learning. I am a former Division 1 student-athlete currently pursuing my MS in Computer Science online with UMass Amherst.</span>
+            <span className="text-gray-500"> I am a graduate student with experience in building React web apps, database and system architecture, and agile software engineering techniques. I have experience programming with Javascript, Typescript, Python, Java, and Golang. I have some experience in lower-level programming with C/C++ and Assembly through project-based learning. I am a former Division 1 student-athlete currently pursuing my MS in Computer Science online with UMass Amherst.</span>
             <DownloadButton fileName="src/assets/MacyGravesResume.pdf"></DownloadButton>
           </div>
+          <PhotoGallery></PhotoGallery>
         </div>
       </SectionCard>
       <SectionCard title="PORTFOLIO">
-        <PortfolioSlider></PortfolioSlider>
+        <PortfolioSlider/>
       </SectionCard>
       <SectionCard title="WORK">
-        <WorkTimeline></WorkTimeline>
+        <WorkTimeline/>
       </SectionCard>
       <SectionCard title="SKILLS">
-
+        <SkillsSpotlight/>
       </SectionCard>
       <SectionCard title="CONTACT">
         Message goes into database or emailed

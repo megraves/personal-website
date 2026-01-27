@@ -19,8 +19,8 @@ export default function WorkTimeline() {
             when: "May 2024 - July 2024",
             image: "src/assets/MRlogo.jpg", //TODO: add image of me presenting to students
             bullets: [
-                "Hosted educational sessions introducing high school and middle school students to robotics, electronics, programming, and soldering.",
-                "Assisted students in weeklong workshop academies as they build their own drones, underwater rovers, and silicon jellyfish robots."
+                {key: 0, val: "Hosted educational sessions introducing high school and middle school students to robotics, electronics, programming, and soldering."},
+                {key: 1, val: "Assisted students in weeklong workshop academies as they build their own drones, underwater rovers, and silicon jellyfish robots."}
             ]
         },
         {
@@ -30,7 +30,7 @@ export default function WorkTimeline() {
             location: "Boston, MA",
             when: "January 2025 - April 2025",
             bullets: [
-                "Built a Python script to filter and present robot company locations on the MassRobotics Ecosystem Map."
+                {key: 0, val: "Built a Python script to filter and present robot company locations on the MassRobotics Ecosystem Map."}
             ]
             
         },
@@ -42,9 +42,9 @@ export default function WorkTimeline() {
             when: "January 2025 - Present",
             image: "src/assets/NRWlogo.png",
             bullets: [
-                "Overhauled and created content for the National Robotics Week 2025 and 2026 website.",
-                "Debugged search filters and component cards in PHP and Twig to accurately show new content.",
-                "Deployed changes using Craft CMS, SFTP and SSH."
+                {key: 0, val: "Overhauled and created content for the National Robotics Week 2025 and 2026 website."},
+                {key: 1, val: "Debugged search filters and component cards in PHP and Twig to accurately show new content."},
+                {key: 2, val: "Deployed changes using Craft CMS, SFTP and SSH."}
             ]
 
         }
@@ -54,7 +54,7 @@ export default function WorkTimeline() {
         <div className="flex flex-row justify-center">
             <div className="text-gray-500 flex flex-col gap-5 p-2">
                 {experiences.map((item) => (
-                    <Timeline>
+                    <Timeline key={item.key}>
                         <TimelineItem>
                             <TimelineOppositeContent>
                                 <div className="flex flex-row justify-end pr-5">
@@ -65,7 +65,7 @@ export default function WorkTimeline() {
                             <TimelineDot />
                             <TimelineConnector />
                             </TimelineSeparator>
-                            <TimelineContent key={item.key}>
+                            <TimelineContent >
                                 <div className="flex flex-col gap-2">
                                     <div>
                                         <h1 className="text-gray-600 text-xl">{item.title}</h1>
@@ -73,9 +73,9 @@ export default function WorkTimeline() {
                                     </div>
                                     <div className="flex flex-col gap-2">
                                             {item.bullets.map((bullet) => (
-                                                <div className="flex flex-row gap-2">
-                                                    <IoIosArrowForward className="text-4xl"/>
-                                                    {bullet}
+                                                <div key={bullet.key} className="flex flex-row gap-2">
+                                                    <IoIosArrowForward size={18} className="shrink-0 mt-1"/>
+                                                    {bullet.val}
                                                 </div>
                                             ))}
                                     </div>

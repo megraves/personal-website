@@ -39,7 +39,7 @@ export default function PortfolioSlider() {
         />,
         <PortfolioCard
             title="HireMap Web Application"
-            description="HireMap is a web-based application designed to help job seekers manage their job applications efficiently. It provides a centralized platform to keep users organized and prepared throughout the job search journey. It was built from scratch using HTML, CSS, DOM logic, and IndexedDB as a semester-long group project for COMPSCI 326 Web Development at UMass Amherst."
+            description="HireMap is a web-based application designed to help job seekers manage their job applications efficiently. It provides a centralized platform to keep users organized and prepared throughout the job search journey. It was built from scratch using HTML, CSS, DOM logic, and IndexedDB with a Dockerized microservice-based architecture as a semester-long group project for COMPSCI 326 Web Development at UMass Amherst."
             image="src/assets/hireMap.jpg"
             content={
                 <div className='flex flex-row gap-5'>
@@ -74,7 +74,16 @@ export default function PortfolioSlider() {
     }
 
     return (
-        <Carousel value={projects} itemTemplate={template} className="p-5" numVisible={1} circular>
-        </Carousel>
+        <div className="pr-carousel">
+            <Carousel 
+                value={projects} 
+                itemTemplate={template} 
+                className="p-5" 
+                numVisible={1} 
+                autoplayInterval={0} 
+                showIndicators 
+                circular>
+            </Carousel>
+        </div>
     );
 }
