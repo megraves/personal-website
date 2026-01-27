@@ -6,6 +6,7 @@ import PortfolioSlider from "./components/atoms/PortfolioSlider";
 import WorkTimeline from "./components/atoms/WorkTimeline";
 import PhotoGallery from "./components/atoms/PhotoGallery";
 import SkillsSpotlight from "./components/atoms/SkillsSpotlight";
+import ContactForm from "./components/atoms/ContactForm";
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
         <SkillsSpotlight/>
       </SectionCard>
       <SectionCard title="CONTACT">
-        Message goes into database or emailed
+        <ContactForm></ContactForm>
       </SectionCard>
     </div>
   )
