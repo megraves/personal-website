@@ -1,4 +1,4 @@
-import SpotlightCard from "./SpotlightCard";
+import SpotlightCard from "../atoms/SpotlightCard";
 import { FaGithub, FaReact, FaPython, FaJava, FaNode, FaFigma, FaDocker } from 'react-icons/fa';
 import { FaGolang } from 'react-icons/fa6';
 import { SiTypescript, SiArduino, SiVite, SiMongodb, SiSupabase, SiCplusplus, SiCraftcms } from "react-icons/si";

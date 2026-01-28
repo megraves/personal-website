@@ -1,6 +1,6 @@
 import { Carousel } from 'primereact/carousel';
-import PortfolioCard from "./PortfolioCard";
-import Button from "./Button";
+import PortfolioCard from "../atoms/PortfolioCard";
+import Button from "../atoms/Button";
 import { FaGithub } from 'react-icons/fa';
 import { IoMdOpen } from "react-icons/io";
 

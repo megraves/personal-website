@@ -1,12 +1,12 @@
 import NavBar from "./components/atoms/NavBar";
-import Profile from "./components/atoms/Profile";
+import Profile from "./components/molecules/Profile";
 import SectionCard from "./components/atoms/SectionCard";
 import DownloadButton from "./components/atoms/DownloadButton";
-import PortfolioSlider from "./components/atoms/PortfolioSlider";
-import WorkTimeline from "./components/atoms/WorkTimeline";
-import PhotoGallery from "./components/atoms/PhotoGallery";
-import SkillsSpotlight from "./components/atoms/SkillsSpotlight";
-import ContactForm from "./components/atoms/ContactForm";
+import PortfolioSlider from "./components/molecules/PortfolioSlider";
+import WorkTimeline from "./components/molecules/WorkTimeline";
+import PhotoGallery from "./components/molecules/PhotoGallery";
+import SkillsSpotlight from "./components/molecules/SkillsSpotlight";
+import ContactForm from "./components/molecules/ContactForm";
 import Footer from "./components/atoms/Footer";
 
 function App() {

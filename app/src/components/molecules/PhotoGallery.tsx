@@ -1,4 +1,4 @@
-import BounceCards from './BounceCards'
+import BounceCards from '../atoms/BounceCards'
 
 const images = [
   "src/assets/IMG_1817.jpg",

@@ -1,11 +1,9 @@
-import Button from "./Button";
+import Button from "../atoms/Button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 
 export default function Profile() {
-
-    //TODO: check out react bits for animated gradient background
 
     return (
         <section id="PROFILE">
