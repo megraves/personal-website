@@ -6,6 +6,8 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { TimelineOppositeContent } from "@mui/lab";
+import MRlogo from "../../assets/MRlogo.jpg";
+import NRWlogo from "../../assets/NRWlogo.png";
 
 
 export default function WorkTimeline() {
@@ -17,7 +19,7 @@ export default function WorkTimeline() {
             title: "STEM Intern",
             location: "Boston, MA",
             when: "May 2024 - July 2024",
-            image: "src/assets/MRlogo.jpg", //TODO: add image of me presenting to students
+            image: MRlogo,
             bullets: [
                 {key: 0, val: "Hosted educational sessions introducing high school and middle school students to robotics, electronics, programming, and soldering."},
                 {key: 1, val: "Assisted students in weeklong workshop academies as they build their own drones, underwater rovers, and silicon jellyfish robots."}
@@ -40,7 +42,7 @@ export default function WorkTimeline() {
             title: "Software Developer",
             location: "Boston, MA",
             when: "January 2025 - Present",
-            image: "src/assets/NRWlogo.png",
+            image: NRWlogo,
             bullets: [
                 {key: 0, val: "Overhauled and created content for the National Robotics Week 2025 and 2026 website."},
                 {key: 1, val: "Debugged search filters and component cards in PHP and Twig to accurately show new content."},

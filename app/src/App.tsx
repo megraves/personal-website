@@ -8,6 +8,7 @@ import PhotoGallery from "./components/molecules/PhotoGallery";
 import SkillsSpotlight from "./components/molecules/SkillsSpotlight";
 import ContactForm from "./components/molecules/ContactForm";
 import Footer from "./components/atoms/Footer";
+import Resume from "./assets/MacyGravesResume.pdf";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
           <div className="flex flex-col w-1/2 gap-5">
             <span className="text-2xl text-gray-600">My name is Macy Graves</span>
             <span className="text-gray-500"> I am a graduate student with experience in building React web apps, database and system architecture, and agile software engineering techniques. I have experience programming with Javascript, Typescript, Python, Java, and Golang. I have some experience in lower-level programming with C/C++ and Assembly through project-based learning. I am a former Division 1 student-athlete currently pursuing my MS in Computer Science online with UMass Amherst.</span>
-            <DownloadButton fileName="src/assets/MacyGravesResume.pdf"></DownloadButton>
+            <DownloadButton fileName={Resume}></DownloadButton>
           </div>
           <PhotoGallery></PhotoGallery>
         </div>

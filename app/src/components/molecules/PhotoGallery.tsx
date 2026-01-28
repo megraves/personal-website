@@ -1,11 +1,17 @@
 import BounceCards from '../atoms/BounceCards'
+import SoccerIMG from '../../assets/IMG_1817.jpg';
+import StudentsIMG from '../../assets/IMG_8185.jpg';
+import CaptainIMG from '../../assets/IMG_9855.jpg';
+import PresentingIMG from '../../assets/IMG_8126.jpg';
+import MicIMG from '../../assets/IMG_2637.jpg';
+
 
 const images = [
-  "src/assets/IMG_1817.jpg",
-  "src/assets/IMG_8185.jpg",
-  "src/assets/IMG_9855.jpg",
-  "src/assets/IMG_8126.jpg",
-  "src/assets/IMG_2637.jpg"
+  SoccerIMG,
+  StudentsIMG,
+  CaptainIMG,
+  PresentingIMG,
+  MicIMG
 ];
 
 const transformStyles = [

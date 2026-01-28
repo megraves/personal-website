@@ -2,6 +2,7 @@ import Button from "../atoms/Button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
+import GradHeadshot from "../../assets/grad_headshot.jpg";
 
 export default function Profile() {
 
@@ -9,7 +10,7 @@ export default function Profile() {
         <section id="PROFILE">
         <div className={`w-full h-150 flex items-center lg:p-50 text-white bg-gradient-to-r from-orange-600 to-pink-600`}>
             <div className="flex flex-row items-center gap-5 p-5">
-                <img src="src/assets/grad_headshot.jpg" className="w-2/5 aspect-square rounded-full object-cover" alt="Profile Photo" />
+                <img src={GradHeadshot} className="w-2/5 aspect-square rounded-full object-cover" alt="Profile Photo" />
                 <div className="flex flex-col gap-5 p-5"> 
                     <h1 className="text-2xl font-light">Hi, I'm</h1>
                     <h2 className="text-5xl lg:text-8xl">Macy Graves</h2>

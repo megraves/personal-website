@@ -1,12 +1,13 @@
 // A navigation bar at the top of the page used to navigate to different scrolling locations
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import MGlogo from '../../assets/MGlogo.png';
 
 export default function NavBar() {
     return (
         <div className="sticky top-0 z-50 w-full flex flex-row justify-between p-5 border-b border-white font-medium text-white bg-gradient-to-r from-orange-600 to-pink-600">
             <div className="aspect-square rounded object-fit h-6">
                 <AnchorLink href="#PROFILE" offset={100}>
-                    <img src="src/assets/MGlogo.png"></img>
+                    <img src={MGlogo}></img>
                 </AnchorLink>
             </div>
             <div className="flex flex-row gap-10">
