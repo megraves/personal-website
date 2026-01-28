@@ -29,13 +29,20 @@ const techLogos = [
 
 const softSkills = [
     {
-        key: 0,
-        name: "Leadership",
+        key: 1,
+        name: "Teamwork & Leadership",
         examples: [
-            {key: 0, val: ""},
-            {key: 1, val: ""}
+            {key: 0, val: "Division I team captain with a collaborative leadership style, experienced in aligning diverse teammates, adapting roles as needed, and stepping up to support team success in high-pressure environments."}
+        ]
+    },
+    {
+        key: 2,
+        name: "Growth Mindset",
+        examples: [
+            {key: 0, val: "Consistently self-assess using the rose-bud-thorn framework, actively seek and apply feedback, and continuously look for ways to add value beyond assigned responsibilities."}
         ]
     }
+
 ];
 
 
@@ -57,12 +64,23 @@ export default function SkillsSpotlight() {
             </SpotlightCard>
             
             <div className="w-1/3 flex flex-col gap-10 border-white custom-spotlight-card bg-gradient-to-r from-orange-600 to-pink-600 rounded-3xl p-px">
-                <SpotlightCard className="w-full h-full flex flex-col gap-10 bg-white custom-spotlight-card border-white" spotlightColor="rgba(252, 159, 202, 0.72)">
+                <SpotlightCard className="w-full h-full flex flex-col gap-5 bg-white custom-spotlight-card border-white" spotlightColor="rgba(252, 159, 202, 0.72)">
                     <span className="w-fit text-2xl font-semibold bg-gradient-to-r from-orange-600 to-pink-600 text-transparent bg-clip-text inline-block">
-                        SOFT
+                        INTERPERSONAL
                     </span>
-                    <div className="flex flex-row flex-wrap gap-8 justify-center w-fit text-2xl font-semibold bg-gradient-to-r from-orange-600 to-pink-600 text-transparent bg-clip-text inline-block">
-                        
+                    <div className="flex flex-row flex-wrap gap-3 justify-center w-fit bg-gradient-to-r from-orange-600 to-pink-600 text-transparent bg-clip-text inline-block">
+                        <div className="flex flex-col gap-3">
+                        {softSkills.map((skill) => (
+                            <div key={skill.key} className="flex flex-col gap-1">
+                                <span className="text-xl font-medium">{skill.name}</span>
+                                {skill.examples.map((bullet) => (
+                                    <li key={bullet.key} className="pl-5">
+                                        {`> ${bullet.val}`}
+                                    </li>
+                                ))}
+                            </div>
+                        ))}
+                        </div>
                     </div>
                 </SpotlightCard>
             </div>
