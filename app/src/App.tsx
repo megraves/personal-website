@@ -7,6 +7,7 @@ import WorkTimeline from "./components/atoms/WorkTimeline";
 import PhotoGallery from "./components/atoms/PhotoGallery";
 import SkillsSpotlight from "./components/atoms/SkillsSpotlight";
 import ContactForm from "./components/atoms/ContactForm";
+import Footer from "./components/atoms/Footer";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <SectionCard title="CONTACT">
         <ContactForm></ContactForm>
       </SectionCard>
+      <Footer/>
     </div>
   )
 }

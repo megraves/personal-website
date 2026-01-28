@@ -6,16 +6,6 @@ import { IoMdOpen } from "react-icons/io";
 
 export default function PortfolioSlider() {
     const projects = [
-        <PortfolioCard
-            title="Campus Quest Web Application"
-            description="Using React, Vite, Tailwind, and Supabase, we created a web application to encourage college students to attend campus events through a gamified treasure hunt. Students can see a map of campus events and attend them to collect various treasures. This was created as a semester project for COMPSCI 520 Theory & Practice of Software Engineering."
-            image="src/assets/campusQuest.png"
-            content={
-                <div className='flex flex-row gap-5'>
-                    <Button content={<FaGithub className="text-4xl"/>} isLink={true} route="https://github.com/megraves/cs520" className="text-3xl"/>
-                </div>
-            }
-        />,
         <PortfolioCard 
             title="RISC-V-like ISA Simulator" 
             description="Using Golang, we designed an simulated a general-purpose instruction set architecture inspired by the RISC-V architecture with operations for integers. We simulated our design using Golang and the BubbleTea library to create a TUI. Its performance was analyzed on three different cache configurations over two benchmarks. This was created as a group project for COMPSCI 535 Computer Architecture at UMass Amherst." 
@@ -24,6 +14,16 @@ export default function PortfolioSlider() {
                 <div className='flex flex-row gap-5'>
                     <Button content={<FaGithub className="text-4xl"/>} isLink={true} route="https://github.com/leon332157/risc-y-8" className="text-3xl"/>
                     <Button content={<IoMdOpen className="text-4xl" />} isLink={true} route="https://docs.google.com/document/d/1ZFalnY6I0NLIUkEPmOWCo4ulSufR1E7AH0zdvXMQF-0/edit?usp=sharing" />
+                </div>
+            }
+        />,
+        <PortfolioCard
+            title="Campus Quest Web Application"
+            description="Using React, Vite, Tailwind, and Supabase, we created a web application to encourage college students to attend campus events through a gamified treasure hunt. Students can see a map of campus events and attend them to collect various treasures. This was created as a semester project for COMPSCI 520 Theory & Practice of Software Engineering."
+            image="src/assets/campusQuest.png"
+            content={
+                <div className='flex flex-row gap-5'>
+                    <Button content={<FaGithub className="text-4xl"/>} isLink={true} route="https://github.com/megraves/cs520" className="text-3xl"/>
                 </div>
             }
         />,

@@ -27,6 +27,17 @@ const techLogos = [
     {key: 80, val: <FaFigma />}
 ];
 
+// const softSkills = [
+//     {
+//         key: 0,
+//         name: "Leadership",
+//         examples: [
+//             {key: 0, val: ""},
+//             {key: 1, val: ""}
+//         ]
+//     }
+// ];
+
 
 export default function SkillsSpotlight() {
 
@@ -44,6 +55,17 @@ export default function SkillsSpotlight() {
                     ))}
                 </div>
             </SpotlightCard>
+            
+            <div className="w-1/3 flex flex-col gap-10 border-white custom-spotlight-card bg-gradient-to-r from-orange-600 to-pink-600 rounded-3xl p-px">
+                <SpotlightCard className="w-full h-full flex flex-col gap-10 bg-white custom-spotlight-card border-white" spotlightColor="rgba(252, 159, 202, 0.72)">
+                    <span className="w-fit text-2xl font-semibold bg-gradient-to-r from-orange-600 to-pink-600 text-transparent bg-clip-text inline-block">
+                        SOFT
+                    </span>
+                    <div className="flex flex-row flex-wrap gap-8 justify-center w-fit text-2xl font-semibold bg-gradient-to-r from-orange-600 to-pink-600 text-transparent bg-clip-text inline-block">
+                        
+                    </div>
+                </SpotlightCard>
+            </div>
             
         </div>
     );
