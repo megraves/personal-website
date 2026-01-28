@@ -27,16 +27,16 @@ const techLogos = [
     {key: 80, val: <FaFigma />}
 ];
 
-// const softSkills = [
-//     {
-//         key: 0,
-//         name: "Leadership",
-//         examples: [
-//             {key: 0, val: ""},
-//             {key: 1, val: ""}
-//         ]
-//     }
-// ];
+const softSkills = [
+    {
+        key: 0,
+        name: "Leadership",
+        examples: [
+            {key: 0, val: ""},
+            {key: 1, val: ""}
+        ]
+    }
+];
 
 
 export default function SkillsSpotlight() {
